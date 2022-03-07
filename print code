@@ -1,0 +1,21 @@
+function send_handle(){
+
+/*let num=document.getElementById("number").value; console.log(num)
+
+let name= document.getElementById("name").value;
+
+var win = window.open(https://wa.me/${num}?text=${name}, '_blank');*/
+
+var divToPrint=document.getElementById('print');
+
+var newWin=window.open('','Print-Window');
+
+newWin.document.open();
+
+newWin.document.write(''+divToPrint.innerHTML+'');
+
+newWin.document.close();
+
+setTimeout(function(){newWin.close();},10);
+
+}
